@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Image Gallery Styles */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    /* Responsive: 1 column on smaller screens */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Existing Content Here -->
+    <h1>Welcome to My Page</h1>
+    <p>This is the previous layout content.</p>
+
+    <!-- New Image Gallery Section -->
+    <section class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 1" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 2" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 3" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 4" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 5" />
+      <img src="https://via.placeholder.com/300x200" alt="Gallery Image 6" />
+    </section>
+  </div>
+</body>
+</html>
